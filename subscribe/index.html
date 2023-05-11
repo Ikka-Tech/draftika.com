@@ -1,136 +1,208 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>draftika - AI Mail Generator</title>
-    <meta name="description" content="Draftika is a beautiful Bootstrap 4 template for product landing pages." />
+    <meta
+      name="description"
+      content="Draftika is a beautiful Bootstrap 4 template for product landing pages."
+    />
 
     <!--Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i|Work+Sans:600" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i|Work+Sans:600"
+      rel="stylesheet"
+    />
 
     <!--vendors styles-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <!-- Bootstrap CSS / Color Scheme -->
-    <link rel="stylesheet" href="/css/default.css" id="theme-color">
-</head>
+    <link rel="stylesheet" href="/css/default.css" id="theme-color" />
 
-<body>
+    <!-- Signin with Google -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+  </head>
 
+  <body>
     <!--navigation-->
-    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white sticky-navigation">
-        <a class="navbar-brand" href="/">
-            draftika
-        </a>
-        <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
-            data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span data-feather="menu"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="/#product">product</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="/#pricing">pricing</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="/#faq">FAQs</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/subscribe">
-                        manage subscription
-                    </a>
-                </li>
-            </ul>
-            <form class="form-inline">
-                <a class="btn btn-primary" href="#">
-                    install Now
-                </a>
-            </form>
-        </div>
+    <nav
+      class="navbar navbar-expand-md navbar-light fixed-top bg-white sticky-navigation"
+    >
+      <a class="navbar-brand" href="/"> draftika </a>
+      <button
+        class="navbar-toggler navbar-toggler-right border-0"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+        aria-controls="navbarCollapse"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span data-feather="menu"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="/#product">product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="/#pricing">pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="/#faq">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/subscribe"> manage subscription </a>
+          </li>
+        </ul>
+        <form class="form-inline">
+          <a class="btn btn-primary" href="#"> install Now </a>
+        </form>
+      </div>
     </nav>
 
     <!--hero header-->
     <section class="pt-7 pt-md-0" id="home">
-        <div class="container">
-            <div class="row vh-md-100">
-                <div class="col-md-6 col-sm-10 my-auto mx-auto text-center">
-                    <h1>get your free subscription</h1>
-                    <p class="lead">draftika is the easy-to-use AI writing assistant that creates great emails/messages
-                        from just a few hints. formalities are no longer a blocker for you – our technology has you
-                        covered.</p>
+      <div class="container">
+        <div class="row vh-md-100">
+          <div class="col-md-6 col-sm-10 my-auto mx-auto text-center">
+            <h1>get your free subscription</h1>
+            <p class="lead">
+              draftika is the easy-to-use AI writing assistant that creates
+              great emails/messages from just a few hints. formalities are no
+              longer a blocker for you – our technology has you covered.
+            </p>
 
+            <div
+              class="d-flex flex-column mx-auto align-items-center"
+              style="gap: 8px"
+            >
+              <div
+                id="g_id_onload"
+                data-client_id="573850179267-gpsbu4k5us8clua686gogj1sri9tgo0d.apps.googleusercontent.com"
+                data-context="signin"
+                data-ux_mode="popup"
+                data-login_uri="http://draftika.com/subscribe"
+                data-auto_select="true"
+                data-itp_support="true"
+              ></div>
 
-                    <div class="d-flex flex-column mx-auto align-items-center" style="gap:8px;">
-                        <a href="#" class="btn btn-primary d-inline-flex flex-row align-items-center">
-                            <em data-feather="chrome" width="20" height="20" class="mr-2"></em>
-                            install on chrome/brave
-                        </a>
-                        <a href="/subscribe" class="btn btn-outline-dark d-inline-flex flex-row align-items-center">
-                            <em data-feather="file-text" width="20" height="20" class="mr-2"></em>
+              <div
+                class="g_id_signin"
+                data-type="standard"
+                data-shape="pill"
+                data-theme="filled_blue"
+                data-text="signin_with"
+                data-size="large"
+                data-logo_alignment="left"
+              ></div>
+              <!-- <a
+                href="#"
+                class="btn btn-primary d-inline-flex flex-row align-items-center"
+              >
+                <em
+                  data-feather="chrome"
+                  width="20"
+                  height="20"
+                  class="mr-2"
+                ></em>
+                install on chrome/brave
+              </a> -->
+              <!-- <a
+                href="/subscribe"
+                class="btn btn-outline-dark d-inline-flex flex-row align-items-center"
+              >
+                <em
+                  data-feather="file-text"
+                  width="20"
+                  height="20"
+                  class="mr-2"
+                ></em>
 
-                            get your free license
-                        </a>
-                    </div>
-
-
-                    <div class="row my-4">
-                        <div class="col-12">
-                            <span>
-                                supported clients &nbsp;
-                            </span>
-                            <span style="flex:1"></span>
-                            <span class="bg-light py-1 px-3 rounded d-inline-flex flex-row align-items-center">
-                                <em data-feather="mail" width="12" height="12" class="mr-2"></em>
-                                Gmail
-                            </span>
-                            <span class="bg-light py-1 px-3 rounded d-inline-flex flex-row align-items-center">
-                                <em data-feather="linkedin" width="12" height="12" class="mr-2"></em>
-                                LinkedIn
-                            </span>
-                            <span class="bg-light py-1 px-3 rounded d-inline-flex flex-row align-items-center">
-                                <em data-feather="message-circle" width="12" height="12" class="mr-2"></em>
-                                Whatsapp Web
-                            </span>
-                        </div>
-                    </div>
-
-                </div>
+                get your free license
+              </a> -->
             </div>
-        </div>
-    </section>
 
+            <div class="row my-4">
+              <div class="col-12">
+                <span> supported clients &nbsp; </span>
+                <span style="flex: 1"></span>
+                <span
+                  class="bg-light py-1 px-3 rounded d-inline-flex flex-row align-items-center"
+                >
+                  <em
+                    data-feather="mail"
+                    width="12"
+                    height="12"
+                    class="mr-2"
+                  ></em>
+                  Gmail
+                </span>
+                <span
+                  class="bg-light py-1 px-3 rounded d-inline-flex flex-row align-items-center"
+                >
+                  <em
+                    data-feather="linkedin"
+                    width="12"
+                    height="12"
+                    class="mr-2"
+                  ></em>
+                  LinkedIn
+                </span>
+                <span
+                  class="bg-light py-1 px-3 rounded d-inline-flex flex-row align-items-center"
+                >
+                  <em
+                    data-feather="message-circle"
+                    width="12"
+                    height="12"
+                    class="mr-2"
+                  ></em>
+                  Whatsapp Web
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!--footer / contact-->
     <footer class="mt-5 mb-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 my-auto text-center text-md-left d-flex align-items-center">
-                    <em data-feather="mail" class="icon" width="16" height="16"></em>
-                    <span>&nbsp;</span>
-                    support@draftika.com
-                </div>
-                <div class="col-md-4 my-auto text-center">
-                    with <span class="text-danger">&hearts;</span> draftika.
-                </div>
-                <div class="col-md-4 my-auto text-center text-md-right">
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item"><a href="/privacy">Privacy</a></li>
-                        <li class="list-inline-item"><a href="/terms">Terms</a></li>
-                    </ul>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-md-4 my-auto text-center text-md-left d-flex align-items-center"
+          >
+            <em data-feather="mail" class="icon" width="16" height="16"></em>
+            <span>&nbsp;</span>
+            support@draftika.com
+          </div>
+          <div class="col-md-4 my-auto text-center">
+            with <span class="text-danger">&hearts;</span> draftika.
+          </div>
+          <div class="col-md-4 my-auto text-center text-md-right">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item"><a href="/privacy">Privacy</a></li>
+              <li class="list-inline-item"><a href="/terms">Terms</a></li>
+            </ul>
+          </div>
         </div>
+      </div>
     </footer>
 
     <!--scroll to top-->
     <div class="scroll-top">
-        <i class="fa fa-angle-up" aria-hidden="true"></i>
+      <i class="fa fa-angle-up" aria-hidden="true"></i>
     </div>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -139,6 +211,5 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.7.0/feather.min.js"></script>
     <script src="/js/scripts.js"></script>
-</body>
-
+  </body>
 </html>
